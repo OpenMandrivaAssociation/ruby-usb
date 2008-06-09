@@ -1,6 +1,6 @@
 %define rbname usb
 %define version 0.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Ruby binding for libusb
 Name:		ruby-%{rbname}
@@ -23,12 +23,12 @@ libusb binding library for Ruby
 %patch0 -p0 
 
 %build
-ruby extconf.rb
+ruby extconf.rb --vendor
 make
 
 %install
 [ "%{buildroot}" != "/" ] && %__rm -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
@@ -36,7 +36,7 @@ make
 %files
 %defattr(-, root, root)
 %doc README COPYING ChangeLog 
-%{ruby_sitelibdir}/*
-%{ruby_sitearchdir}/*
+%{ruby_vendorlibdir}/*
+%{ruby_vendorarchdir}/*
 
 
