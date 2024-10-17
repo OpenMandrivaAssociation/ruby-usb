@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Group:		Development/Ruby
 License:	GPL
-URL:		http://www.a-k-r.org/ruby-usb/
+URL:		https://www.a-k-r.org/ruby-usb/
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	ruby-devel
