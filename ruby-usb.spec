@@ -11,6 +11,7 @@ License:	GPL
 URL:		https://www.a-k-r.org/ruby-usb/
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRequires:	make
 BuildRequires:	ruby-devel
 BuildRequires:	libusb-devel
 
