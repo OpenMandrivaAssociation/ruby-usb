@@ -1,6 +1,6 @@
 %define rbname usb
 %define version 0.2
-%define release %mkrel 3
+%define release 4
 
 Summary:	Ruby binding for libusb
 Name:		ruby-%{rbname}
